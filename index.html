@@ -1,32 +1,93 @@
+
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>我的第一个网站</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>账号精选商城</title>
 <style>
-body {
-  font-family: Arial, sans-serif;
-  background: #101827;
-  color: white;
-  text-align: center;
-  padding: 60px 20px;
-}
-h1 { color: #61dafb; }
-p { color: #cbd5e1; }
-a {
-  display: inline-block;
-  background: #2563eb;
-  color: white;
-  padding: 14px 25px;
-  border-radius: 10px;
-  text-decoration: none;
-}
+*{box-sizing:border-box}
+body{margin:0;background:#0b1020;color:#fff;font-family:Arial,sans-serif}
+header{padding:20px;background:#131b31;display:flex;justify-content:space-between}
+header b{color:#8b9cff;font-size:21px}
+header a{color:#ddd;text-decoration:none;margin-left:12px}
+main{max-width:1000px;margin:auto;padding:25px 18px}
+.hero{padding:45px 0}
+h1{font-size:38px}
+p{color:#b5bfd4;line-height:1.7}
+.notice{background:#302817;padding:15px;border-radius:12px;color:#f5dfa8}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.card{background:#18233d;padding:20px;border-radius:15px;margin-top:15px}
+.card h3{margin-top:5px}
+.emoji{font-size:38px}
+.price{color:#60dfc0;font-size:20px;font-weight:bold}
+.pay{background:#18233d;padding:20px;border-radius:14px;margin:15px 0}
+.placeholder{border:1px dashed #71809f;padding:20px;text-align:center;border-radius:10px;color:#aab5ce}
+footer{padding:30px;text-align:center;color:#8995ad}
+@media(max-width:650px){.grid{grid-template-columns:1fr}h1{font-size:32px}}
 </style>
 </head>
 <body>
-<h1>欢迎来到我的网站</h1>
-<p>这是我用手机制作的第一个网站！</p>
-<a href="https://github.com/">了解更多</a>
+<header>
+<b>账号精选商城</b>
+<nav><a href="#goods">商品</a><a href="#payment">付款</a></nav>
+</header>
+<main>
+<section class="hero">
+<h1>精选数字商品<br>简单购买，安全交易</h1>
+<p>欢迎来到账号精选商城。浏览商品，咨询详情，确认订单后完成交易。</p>
+</section>
+<div class="notice">
+温馨提示：仅提供来源合法且允许转让的商品。购买前请确认商品详情及售后规则。
+</div>
+<section id="goods">
+<h2>精选商品</h2>
+<div class="grid">
+<div class="card">
+<div class="emoji">🎮</div>
+<h3>游戏账号</h3>
+<p>商品详情、游戏区服、等级和装备信息。</p>
+<div class="price">价格待填写</div>
+</div>
+<div class="card">
+<div class="emoji">🌐</div>
+<h3>海外平台账号</h3>
+<p>商品说明、平台名称和转让条件。</p>
+<div class="price">价格待填写</div>
+</div>
+<div class="card">
+<div class="emoji">🔐</div>
+<h3>其他数字商品</h3>
+<p>商品内容、交付方式和售后说明。</p>
+<div class="price">价格待填写</div>
+</div>
+</div>
+</section>
+<section>
+<h2>购买流程</h2>
+<div class="card">
+<p>01 · 选择商品并咨询详情</p>
+<p>02 · 确认价格和交易条件</p>
+<p>03 · 核实实际到账后完成交接</p>
+</div>
+</section>
+<section id="payment">
+<h2>付款方式</h2>
+<div class="pay">
+<h3>微信支付</h3>
+<div class="placeholder">微信收款方式预留位置</div>
+</div>
+<div class="pay">
+<h3>支付宝</h3>
+<div class="placeholder">支付宝收款方式预留位置</div>
+</div>
+<div class="pay">
+<h3>USDT</h3>
+<div class="placeholder">USDT 收款信息预留位置</div>
+</div>
+<p>目前页面仅展示付款说明，尚未接入真实支付和自动发货。</p>
+</section>
+</main>
+<footer>© 2026 账号精选商城</footer>
 </body>
 </html>
